@@ -271,7 +271,7 @@ echo "Removing default route via ${IFACE}..."
 ip route del default 2>/dev/null || true
 
 # hev-socks5-tunnel creates and configures the tun device itself.
-# socks5.udp='udp' = standard SOCKS5 UDP ASSOCIATE (xray socks inbound
+# socks5.udp='udp' = standard SOCKS5 UDP ASSOCIATE (xray socks inbound 
 # supports it); do NOT set 'tcp' — that needs hev-socks5-server on the far end.
 HEV_CONFIG="${CONFIG_DIR}/hev-tunnel.yaml"
 cat > "${HEV_CONFIG}" <<HEVEOF
